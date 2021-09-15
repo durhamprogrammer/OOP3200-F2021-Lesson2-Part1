@@ -3,7 +3,7 @@
 #include <iostream>
 
 
-Student::Student(const std::string& name, const int age, std::string& student_id)
+Student::Student(const std::string& name, const int age, const std::string& student_id)
 	: Person(name, age)
 {
 	SetStudentID(student_id);
