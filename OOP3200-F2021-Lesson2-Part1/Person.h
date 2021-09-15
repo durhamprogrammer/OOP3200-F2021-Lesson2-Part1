@@ -8,21 +8,21 @@ class Person
 {
 public:
 	// CONSTRUCTOR
-	Person(std::string name, int age);
+	Person(const std::string& name, int age);
 
 	// DESTRUCTOR
 	~Person();
 
 	// GETTERS (ACCESSORS)
-	std::string GetName();
-	int GetAge();
+	std::string GetName() const;
+	int GetAge() const;
 
 	// SETTERS (MUTATORS)
-	void SetName(std::string name);
+	void SetName(const std::string& name);
 	void SetAge(int age);
 
 	// METHODS (PUBLIC FUNCTIONS)
-	void SaysHello();
+	void SaysHello() const;
 
 private:
 	// PRIVATE MEMBER VARIABLES
